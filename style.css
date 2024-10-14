@@ -31,6 +31,23 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* About Me Section */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.about-container p {
+    max-width: 600px;
+}
+
 /* 可滑動的電影圖片列表 */
 .movie-slider {
     display: flex;
@@ -91,12 +108,42 @@ ul li a:hover {
     color: #007bff;
 }
 
-/* footer 样式 */
+/* 音樂播放器 */
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* 聯絡表單樣式 */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
 footer {
     text-align: center;
     padding: 15px 0;
     background: #333;
     color: #fff;
-    margin-top: 20px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
-}
+    margin-top: 20
