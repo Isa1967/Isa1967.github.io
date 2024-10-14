@@ -11,46 +11,94 @@
         <h1>Welcome to Coco's Personal Page</h1>
         <p>A collection of my favorite movies and music tracks</p>
     </header>
-    
+
     <main>
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <img src="https://via.placeholder.com/200" alt="Your Photo" class="about-img">
+                <p>Hello! I'm Coco, a movie and music enthusiast. On this page, you'll find my favorite movie recommendations and music tracks. I'm passionate about web development and enjoy learning new things every day.</p>
+            </div>
+        </section>
+        
+        <!-- Top Movies Section -->
         <section>
             <h2>Top Movies</h2>
             <div class="movie-slider">
                 <div class="movie-card">
                     <img src="https://upload.wikimedia.org/wikipedia/en/1/1e/Love_Letter_1995.jpg" alt="Love Letter" />
                     <h3>Love Letter</h3>
+                    <p>A touching Japanese romance film. Rating: ★★★★★</p>
                 </div>
                 <div class="movie-card">
                     <img src="https://upload.wikimedia.org/wikipedia/en/e/ea/Zootopia.jpg" alt="Zootopia" />
                     <h3>Zootopia</h3>
+                    <p>An exciting animated adventure. Rating: ★★★★☆</p>
                 </div>
                 <div class="movie-card">
                     <img src="https://upload.wikimedia.org/wikipedia/en/b/b8/Good_Will_Hunting.png" alt="Good Will Hunting" />
                     <h3>Good Will Hunting</h3>
+                    <p>A brilliant story of self-discovery. Rating: ★★★★★</p>
                 </div>
                 <div class="movie-card">
                     <img src="https://upload.wikimedia.org/wikipedia/en/4/41/A_Star_is_Born.png" alt="A Star is Born" />
                     <h3>A Star is Born</h3>
+                    <p>A heartfelt musical journey. Rating: ★★★★☆</p>
                 </div>
             </div>
         </section>
         
+        <!-- Favorite Music Tracks Section -->
         <section>
             <h2>Favorite Music Tracks</h2>
             <ul>
                 <li>
                     <a href="https://www.youtube.com/watch?v=ShZ978fBl6Y" target="_blank">You Are The Reason - Calum Scott</a>
+                    <audio controls>
+                        <source src="audio/your_are_the_reason.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
                 </li>
                 <li>
                     <a href="https://youtu.be/tAcKfnf0zv4?si=5NpSdrelRgBDcFRT" target="_blank">Hate You - Jungkook</a>
+                    <audio controls>
+                        <source src="audio/hate_you.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/watch?v=OZlN5Jvq8wg" target="_blank">First Love - Hikaru Utada</a>
+                    <audio controls>
+                        <source src="audio/first_love.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
                 </li>
                 <li>
                     <a href="https://youtu.be/ptiK8U4WlSc?si=7DMrzsAwU9n3YiBL" target="_blank">Fujii Kaze - Michi Teyu Ku</a>
+                    <audio controls>
+                        <source src="audio/michi_teyu_ku.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
                 </li>
             </ul>
+        </section>
+        
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
     
