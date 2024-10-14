@@ -49,34 +49,37 @@ h2 {
 }
 
 /* 可滑動的電影圖片列表 */
-.movie-slider {
-    display: flex;
-    overflow-x: scroll;
-    gap: 20px;
-    scroll-behavior: smooth;
-}
-
-.movie-slider::-webkit-scrollbar {
-    display: none; /* 隱藏捲動條 */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* 自適應列數 */
+    gap: 16px; /* 卡片之間的間隔 */
 }
 
 .movie-card {
-    flex: 0 0 300px;
-    text-align: center;
-    background: #f0f0f0;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.movie-card img {
-    width: 100%;
-    border-radius: 10px;
+    background-color: #f9f9f9; /* 背景色 */
+    border: 1px solid #ddd; /* 邊框 */
+    border-radius: 8px; /* 圓角 */
+    overflow: hidden; /* 避免溢出 */
+    text-align: center; /* 文字居中 */
+    transition: transform 0.3s; /* 變換效果 */
 }
 
 .movie-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* 懸停時放大 */
+}
+
+.movie-card img {
+    width: 100%; /* 圖片寬度自適應 */
+    height: auto; /* 高度自動 */
+    display: block; /* 顯示塊元素 */
+}
+
+.movie-card h3 {
+    margin: 8px 0 4px; /* 標題的上下邊距 */
+}
+
+.movie-card p {
+    margin: 0 0 8px; /* 介紹的上下邊距 */
 }
 
 /* 音樂列表樣式 */
