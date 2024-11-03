@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,6 +33,39 @@
             });
         });
     </script>
+    <style>
+        /* Add some basic styles for images */
+        .movie-card img,
+        .about-img {
+            width: 150px;  /* Adjust width as needed */
+            height: auto;  /* Maintain aspect ratio */
+            max-height: 200px;  /* Set a maximum height */
+            object-fit: cover; /* Ensure the image covers the container */
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .about-img {
+            border-radius: 50%; /* Make the image round */
+            margin-right: 20px; /* Space between image and text */
+        }
+
+        .movie-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between movie cards */
+        }
+
+        .movie-card {
+            text-align: center;
+            border: 1px solid #ccc; /* Add a border to movie cards */
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
